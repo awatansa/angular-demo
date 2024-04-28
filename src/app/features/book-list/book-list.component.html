@@ -1,0 +1,9 @@
+<div *ngFor="let book of books" class="flex items-center mb-2">
+  <p class="font-bold">{{ book.volumeInfo.title }}</p><span> by {{ book.volumeInfo.authors }}</span>
+  <button (click)="add.emit(book.id)"
+          data-test="add-button"
+          icon="pi pi-plus"
+          pButton>
+    Add to Collection
+  </button>
+</div>
