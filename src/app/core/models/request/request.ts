@@ -1,1 +1,2 @@
-export interface Request {}
+export interface Request {
+}

@@ -7,4 +7,5 @@ import { Component } from "@angular/core";
   templateUrl: "./root-layout.component.html",
   styleUrl: "./root-layout.component.scss",
 })
-export class RootLayoutComponent {}
+export class RootLayoutComponent {
+}

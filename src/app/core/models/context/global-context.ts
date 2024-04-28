@@ -1,1 +1,2 @@
-export interface GlobalContext {}
+export interface GlobalContext {
+}

@@ -12,9 +12,9 @@ import { PrimeNGConfig } from "primeng/api";
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
+  title = "angular-demo";
+
   constructor(private primeng: PrimeNGConfig) {
     this.primeng.ripple = true;
   }
-
-  title = "angular-demo";
 }

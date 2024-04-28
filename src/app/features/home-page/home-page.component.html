@@ -1,1 +1,10 @@
-<p>home-page works!</p>
+<div class="flex flex-grow justify-between">
+  <div class="w-50">
+    <h2 class="text-4xl">Books</h2>
+    <app-book-list (add)="onAdd($event)" [books]="(books$ | async)!" class="book-list"/>
+  </div>
+  <div class="w-50">
+    <h2 class="text-4xl">My Collection</h2>
+    <app-book-collection (remove)="onRemove($event)" [books]="(bookCollection$ | async)!" class="book-collection"/>
+  </div>
+</div>
